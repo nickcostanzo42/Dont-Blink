@@ -1,0 +1,107 @@
+body {
+  background-image: ;
+}
+
+#title{
+  position: absolute;
+  top: 2%;
+  left: 30%;
+  width: 40%;
+  font-family: Butcherman;
+  border: solid black 2px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 58px;
+  color: white;
+}
+
+#animations {
+  position: absolute;
+  width: 10%;
+  height: 80%;
+  border: solid black 2px;
+  top: 10%;
+  right: 2%;
+}
+
+.playfield {
+  position: absolute;
+  border: solid black 2px;
+  height: 60%;
+  width: 80%;
+  top: 22%;
+  left: 5%;
+}
+
+.doors {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+#img1 {
+  position: absolute;
+  border: solid black 1px;
+  height: 70%;
+  width: 16%;
+  top: 0;
+  left: 2%;
+}
+
+#img2 {
+  position: absolute;
+  border: solid black 1px;
+  height: 70%;
+  width: 16%;
+  top: 0;
+  left: 42%;
+
+}
+
+#img3 {
+  position: absolute;
+  border: solid black 1px;
+  height: 70%;
+  width: 16%;
+  top: 0;
+  right: 2%;
+}
+
+#img4 {
+  position: absolute;
+  border: solid black 1px;
+  height: 70%;
+  width: 16%;
+  bottom: 0;
+  left: 22%;
+
+}
+
+#img5 {
+  position: absolute;
+  border: solid black 1px;
+  height: 70%;
+  width: 16%;
+  bottom: 0;
+  right: 22%;
+}
+
+#timer {
+  position: absolute;
+  bottom: -5%;
+  width: 40%;
+  height: 10%;
+  border: black solid 2px;
+  left: 30%;
+  text-align: center;
+  font-size: 50px;
+  font-family: Butcherman;
+  color: white;
+}
+
+
+
+
+
+
+
