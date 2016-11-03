@@ -1,5 +1,6 @@
 body {
-  background-image: ;
+  background-image: url("./images/hauntedHouseTwo.jpg");
+  background-size: cover;
 }
 
 #title{
@@ -8,7 +9,6 @@ body {
   left: 30%;
   width: 40%;
   font-family: Butcherman;
-  border: solid black 2px;
   text-align: center;
   margin: 0 auto;
   font-size: 58px;
@@ -31,12 +31,14 @@ body {
   width: 80%;
   top: 22%;
   left: 5%;
+  -webkit-perspective: 800;
 }
 
 .doors {
   position: relative;
   height: 100%;
   width: 100%;
+  -webkit-perspective: 800;
 }
 
 #img1 {
@@ -46,6 +48,8 @@ body {
   width: 16%;
   top: 0;
   left: 2%;
+  /*for 3d styling  */
+  animation: openDoor 5s infinite;
 }
 
 #img2 {
@@ -55,7 +59,7 @@ body {
   width: 16%;
   top: 0;
   left: 42%;
-
+  transform: translate(20px) rotateY(80deg);
 }
 
 #img3 {
@@ -91,7 +95,6 @@ body {
   bottom: -5%;
   width: 40%;
   height: 10%;
-  border: black solid 2px;
   left: 30%;
   text-align: center;
   font-size: 50px;
@@ -99,9 +102,14 @@ body {
   color: white;
 }
 
-
-
-
+@keyframes openDoor {
+  0%{
+    transform: translate(20px) rotateY(0deg);
+  }
+  100%{
+    transform: translate(20px) rotateY(116deg);
+  }
+}
 
 
 
