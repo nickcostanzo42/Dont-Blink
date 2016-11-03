@@ -40,56 +40,81 @@ body {
   -webkit-perspective: 800;
 }
 
-#img1 {
+#door1{
   position: absolute;
-  border: solid black 1px;
   height: 70%;
   width: 16%;
   top: 0;
   left: 2%;
-  /*for 3d styling  */
-  animation: openDoor 5s infinite;
+  perspective: 500px;
 }
 
-#img2 {
+#img1 {
+  height: 100%;
+  width: 100%;
+  /*for 3d styling  */
+}
+
+#door2 {
   position: absolute;
-  border: solid black 1px;
   height: 70%;
   width: 16%;
   top: 0;
   left: 42%;
-  animation: openDoor2 5s infinite;
+  perspective: 500px;
 }
 
-#img3 {
+#img2 {
+  height: 100%;
+  width: 100%;
+  animation: openDoor 5s infinite;
+}
+
+#door3 {
   position: absolute;
-  border: solid black 1px;
   height: 70%;
   width: 16%;
   top: 0;
   right: 2%;
-  animation: openDoor3 5s infinite;
+  perspective: 500px;
 }
 
-#img4 {
+#img3 {
+  height: 100%;
+  width: 100%;
+  animation: openDoor 5s infinite;
+}
+
+#door4 {
   position: absolute;
-  border: solid black 1px;
   height: 70%;
   width: 16%;
   bottom: 0;
   left: 22%;
-  animation: openDoor4 5s infinite;
+  perspective: 500px;
 }
 
-#img5 {
+#img4 {
+  height: 100%;
+  width: 100%;
+  animation: openDoor 5s infinite;
+}
+
+#door5 {
   position: absolute;
-  border: solid black 1px;
   height: 70%;
   width: 16%;
   bottom: 0;
   right: 22%;
-  animation: openDoor5 5s infinite;
+  perspective: 500px;
 }
+
+#img5 {
+  height: 100%;
+  width: 100%;
+  animation: openDoor 5s infinite;
+}
+
 
 #timer {
   position: absolute;
@@ -103,48 +128,20 @@ body {
   color: white;
 }
 
+
+.openDoor {
+  animation: openDoor 5s infinite;
+}
+
+
+
 /* Animation for door opening */
 @keyframes openDoor {
   0%{
     transform: rotateY(0deg);
   }
   100%{
-    transform: rotateY(117deg);
-  }
-}
-@keyframes openDoor2 {
-  0%{
-    transform:  rotateY(0deg);
-  }
-  100%{
     transform: rotateY(90deg);
   }
 }
-@keyframes openDoor3 {
-  0%{
-    transform:  rotateY(0deg);
-  }
-  100%{
-    transform: rotateY(63deg);
-  }
-}
-@keyframes openDoor4 {
-  0%{
-    transform:  rotateY(0deg);
-  }
-  100%{
-    transform: rotateY(104deg);
-  }
-}
-@keyframes openDoor5 {
-  0%{
-    transform:  rotateY(0deg);
-  }
-  100%{
-    transform: rotateY(76deg);
-  }
-}
 /* Animations for doors */
-
-
-
