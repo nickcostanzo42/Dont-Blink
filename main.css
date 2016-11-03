@@ -26,7 +26,6 @@ body {
 
 .playfield {
   position: absolute;
-  border: solid black 2px;
   height: 60%;
   width: 80%;
   top: 22%;
@@ -59,7 +58,7 @@ body {
   width: 16%;
   top: 0;
   left: 42%;
-  transform: translate(20px) rotateY(80deg);
+  animation: openDoor2 5s infinite;
 }
 
 #img3 {
@@ -69,6 +68,7 @@ body {
   width: 16%;
   top: 0;
   right: 2%;
+  animation: openDoor3 5s infinite;
 }
 
 #img4 {
@@ -78,7 +78,7 @@ body {
   width: 16%;
   bottom: 0;
   left: 22%;
-
+  animation: openDoor4 5s infinite;
 }
 
 #img5 {
@@ -88,6 +88,7 @@ body {
   width: 16%;
   bottom: 0;
   right: 22%;
+  animation: openDoor5 5s infinite;
 }
 
 #timer {
@@ -102,14 +103,48 @@ body {
   color: white;
 }
 
+/* Animation for door opening */
 @keyframes openDoor {
   0%{
-    transform: translate(20px) rotateY(0deg);
+    transform: rotateY(0deg);
   }
   100%{
-    transform: translate(20px) rotateY(116deg);
+    transform: rotateY(117deg);
   }
 }
+@keyframes openDoor2 {
+  0%{
+    transform:  rotateY(0deg);
+  }
+  100%{
+    transform: rotateY(90deg);
+  }
+}
+@keyframes openDoor3 {
+  0%{
+    transform:  rotateY(0deg);
+  }
+  100%{
+    transform: rotateY(63deg);
+  }
+}
+@keyframes openDoor4 {
+  0%{
+    transform:  rotateY(0deg);
+  }
+  100%{
+    transform: rotateY(104deg);
+  }
+}
+@keyframes openDoor5 {
+  0%{
+    transform:  rotateY(0deg);
+  }
+  100%{
+    transform: rotateY(76deg);
+  }
+}
+/* Animations for doors */
 
 
 
