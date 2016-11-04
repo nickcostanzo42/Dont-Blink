@@ -29,6 +29,7 @@
         !$('#img' + doorChoose).hasClass('openDoor4s') &&
         !$('#img' + doorChoose).hasClass('openDoor2s'))
       {
+        $('#door' + doorChoose).addClass('monster' + classChoose + 's');
         $('#img' + doorChoose).addClass('openDoor' + classChoose + 's');
         counter++;
       }

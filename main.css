@@ -47,6 +47,7 @@ body {
   top: 0;
   left: 2%;
   perspective: 500px;
+  background: cover;
 }
 
 #img1 {
@@ -133,6 +134,21 @@ body {
 
 .openDoor2s {
   animation: openDoor 2s;
+}
+
+.monster4s {
+  background-image: url('images/creepy_face_1.jpg');
+  background-size: cover;
+}
+
+.monster3s {
+  background-image: url('images/creepy_face_2.png') no-repeat center center;
+  background-size: cover;
+}
+
+.monster2s {
+  background-image: url('images/creepy_face_3.png') no-repeat center center;
+  background-size: cover;
 }
 
 
