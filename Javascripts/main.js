@@ -5,16 +5,33 @@
   var counter = 0;
   var $doorsClick = $('.click');
   var $startButton = $('#start');
+  var $timerText = $('#timer');
   //Door jQuery objects
   var $doorOne = $('#img1');
   var $doorTwo = $('#img2');
   var $doorThree = $('#img3');
   var $doorFour = $('#img4');
   var $doorFive = $('#img5');
+  //interval variable
+
 
   var startGame = function(){
-    //Call the function that starts timer and calls the monsterSpawn function
+
+    spawnInterval = setInterval(monsterSpawn, 2000);
+
+
   };
+
+  var timerFunc = function(){
+
+    totalSeconds = 0;
+
+    secondsInterval = setInterval(function(){
+      totalSeconds += 1;
+      $timerText.html() = totalSeconds;
+    }, 1000)
+
+  }
 
 
 
@@ -53,8 +70,6 @@
   for (var i = 1; i < 6; i++){
     $('#img' + i).click(function(){
 
-      var iterator = i;
-
     if ($(this).hasClass('openDoor4s') ||
         $(this).hasClass('openDoor3s') ||
         $(this).hasClass('openDoor2s'))
@@ -64,10 +79,14 @@
       $(this).removeClass('openDoor2s');
       counter -= 1;
      }
-
      console.log('click')
     })
   }
+
+  $('#start-button').click(function(){
+    startGame();
+    timerFunc();
+  })
 }
 
 addEventListeners();
