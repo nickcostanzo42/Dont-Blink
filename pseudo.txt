@@ -1,0 +1,14 @@
+Actual PseudoCode:
+
+1.  Going to need to create a start button, use animations div.  On click
+have it start game and timer, and make the play text dissapear.
+  -call function that starts random card flipping
+
+2.  Create a function that starts random card flipping
+  -Will randomly cause doors to have 5s, 4s, and 3s durations on animation time
+  and have a specific image associated with each.
+  -Create innate onclick functions on each door that will remove the
+  associated animation class
+  -Max of 4 doors opening at a time
+    -Do this with a counter, adding a counter everytime a door is spawned
+    and removing one every time
