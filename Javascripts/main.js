@@ -13,29 +13,43 @@
   var $doorFour = $('#img4');
   var $doorFive = $('#img5');
   //interval variable
+  var startTimer = 0;
+
 
 
   var startGame = function(){
-
-    spawnInterval = setInterval(monsterSpawn, 2000);
-
-
+    timerFunc();
+    monsterSpawn();
   };
 
+//Seperate timer functions for different parts of the game
   var timerFunc = function(){
-
-    totalSeconds = 0;
-
-    secondsInterval = setInterval(function(){
-      totalSeconds += 1;
-      $timerText.html() = totalSeconds;
-    }, 1000)
-
-  }
-
+    firstInterval = setInterval(function(){
+      startTimer += 1;
+      $('#timer').html(startTimer);
+  }, 1000);
+}
 
 
   var monsterSpawn = function(){
+//Makes it the doors open faster as the function goes on.
+    if (startTimer === 0){
+      spawnInterval = setInterval(monsterSpawn, 2000)
+    }
+    if (startTimer === 10){
+      clearInterval(spawnInterval);
+      spawnInterval2 = setInterval(monsterSpawn, 1500);
+    }
+    else if (startTimer === 20){
+      clearInterval(spawnInterval2)
+      spawnInterval3 = setInterval(monsterSpawn, 1000)
+    }
+    else if (startTimer === 35){
+      clearInterval(spawnInterval3)
+      spawnInterval4 = setInterval(monsterSpawn, 800)
+    }
+
+
     //Have it randomly attach one of the doorOpen classes to
     //one of the doors
     if (counter < 4) {
@@ -60,7 +74,37 @@
     } else {
       //do nothing
     }
+    $('#img' + doorChoose).on('animationend', function(){
+      $('.click').off()
+      endGame();
+    });
+
   };
+
+
+  var endGame = function(){
+
+    counter = 0;
+
+    for (var i = 1; i < 20; i++){
+        window.clearInterval(i);
+      }
+
+    $('#timer').html('0');
+
+    startTimer = 0;
+
+    for (var i = 1; i < 6; i++){
+      $('#img' + i).removeClass('openDoor4s');
+      $('#img' + i).removeClass('openDoor3s');
+      $('#img' + i).removeClass('openDoor2s');
+    }
+
+  for (var i = 1; i < 6; i++){
+
+  }
+
+}
 
 
 
@@ -85,7 +129,6 @@
 
   $('#start-button').click(function(){
     startGame();
-    timerFunc();
   })
 }
 
