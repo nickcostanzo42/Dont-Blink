@@ -42,9 +42,6 @@
     }
   };
 
-
-
-
 //Make each jQuery object a seperate class
   var addEventListeners = function(){
 
@@ -64,53 +61,7 @@
     })
   }
 
-    // $doorTwo.click(function(){
-    // if (this.hasClass('openDoor4s') ||
-    //     this.hasClass('openDoor3s') ||
-    //     this.hasClass('openDoor2s'))
-    //   {
-    //   this.removeClass('openDoor4s');
-    //   this.removeClass('openDoor3s');
-    //   this.removeClass('openDoor2s');
-    //   counter -= 1;
-    //  }
-    // })
 
-    // $doorThree.click(function(){
-    // if (this.hasClass('openDoor4s') ||
-    //     this.hasClass('openDoor3s') ||
-    //     this.hasClass('openDoor2s'))
-    //   {
-    //   this.removeClass('openDoor4s');
-    //   this.removeClass('openDoor3s');
-    //   this.removeClass('openDoor2s');
-    //   counter -= 1;
-    //  }
-    // })
-
-    // $doorFour.click(function(){
-    // if (this.hasClass('openDoor4s') ||
-    //     this.hasClass('openDoor3s') ||
-    //     this.hasClass('openDoor2s'))
-    //   {
-    //   this.removeClass('openDoor4s');
-    //   this.removeClass('openDoor3s');
-    //   this.removeClass('openDoor2s');
-    //   counter -= 1;
-    //  }
-    // })
-
-    // $doorFive.click(function(){
-    // if (this.hasClass('openDoor4s') ||
-    //     this.hasClass('openDoor3s') ||
-    //     this.hasClass('openDoor2s'))
-    //   {
-    //   this.removeClass('openDoor4s');
-    //   this.removeClass('openDoor3s');
-    //   this.removeClass('openDoor2s');
-    //   counter -= 1;
-    //  }
-    // })
 
 }
 

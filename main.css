@@ -142,12 +142,12 @@ body {
 }
 
 .monster3s {
-  background-image: url('images/creepy_face_2.png') no-repeat center center;
+  background-image: url('images/creepy_face_2.png');
   background-size: cover;
 }
 
 .monster2s {
-  background-image: url('images/creepy_face_3.png') no-repeat center center;
+  background-image: url('images/creepy_face_3.png');
   background-size: cover;
 }
 
