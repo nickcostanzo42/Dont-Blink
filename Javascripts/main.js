@@ -16,6 +16,8 @@
     //Call the function that starts timer and calls the monsterSpawn function
   };
 
+
+
   var monsterSpawn = function(){
     //Have it randomly attach one of the doorOpen classes to
     //one of the doors
@@ -29,6 +31,7 @@
         !$('#img' + doorChoose).hasClass('openDoor4s') &&
         !$('#img' + doorChoose).hasClass('openDoor2s'))
       {
+        $('#door' + doorChoose).removeClass()
         $('#door' + doorChoose).addClass('monster' + classChoose + 's');
         $('#img' + doorChoose).addClass('openDoor' + classChoose + 's');
         counter++;
@@ -42,11 +45,16 @@
     }
   };
 
+
+
 //Make each jQuery object a seperate class
   var addEventListeners = function(){
 
   for (var i = 1; i < 6; i++){
     $('#img' + i).click(function(){
+
+      var iterator = i;
+
     if ($(this).hasClass('openDoor4s') ||
         $(this).hasClass('openDoor3s') ||
         $(this).hasClass('openDoor2s'))
@@ -60,9 +68,6 @@
      console.log('click')
     })
   }
-
-
-
 }
 
 addEventListeners();
