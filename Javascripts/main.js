@@ -100,10 +100,6 @@
       $('#img' + i).removeClass('openDoor2s');
     }
 
-  for (var i = 1; i < 6; i++){
-
-  }
-
 }
 
 
@@ -129,6 +125,15 @@
 
   $('#start-button').click(function(){
     startGame();
+
+    $('#start-button').text('Good Luck').css({
+      'background-color' : 'transparent',
+      'border' : '0 none'
+    })
+
+    $('#start-button').fadeOut(1500, function(){
+        //do nothing
+    })
   })
 }
 
