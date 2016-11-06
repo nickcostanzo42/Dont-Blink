@@ -1,5 +1,5 @@
 body {
-  background-image: url("./images/hauntedHouseTwo.jpg");
+  background-image: url("Images/hauntedHouseTwo.jpg");
   background-size: cover;
 }
 
@@ -151,22 +151,22 @@ body {
 }
 
 .monster4s {
-  background-image: url('images/creepy_face_1.jpg');
+  background-image: url('Images/creepy_face_1.jpg');
   background-size: cover;
 }
 
 .monster3s {
-  background-image: url('images/creepy_face_2.png');
+  background-image: url('Images/creepy_face_2.png');
   background-size: cover;
 }
 
 .monster2s {
-  background-image: url('images/creepy_face_3.png');
+  background-image: url('Images/creepy_face_3.png');
   background-size: cover;
 }
 
 .endScare {
-  background-image: url('images/scaryPopUp.jpg');
+  background-image: url('Images/scaryPopUp.jpg');
 }
 
 

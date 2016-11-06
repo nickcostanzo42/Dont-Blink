@@ -110,7 +110,7 @@
       $('#img' + i).removeClass('openDoor2s');
     }
 
-    $('body').css('background-image', 'url(images/scaryPopUp.jpg)');
+    $('body').css('background-image', 'url(Images/scaryPopUp.jpg)');
 
     setTimeout(function(){
       document.location.reload(true);
