@@ -147,7 +147,7 @@ body {
 }
 
 .openDoor2s {
-  animation: openDoor 2s;
+  animation: openDoor 2.5s;
 }
 
 .monster4s {
@@ -163,6 +163,10 @@ body {
 .monster2s {
   background-image: url('images/creepy_face_3.png');
   background-size: cover;
+}
+
+.endScare {
+  background-image: url('images/scaryPopUp.jpg');
 }
 
 

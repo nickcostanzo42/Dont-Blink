@@ -15,8 +15,6 @@
   //interval variable
   var startTimer = 0;
 
-
-
   var startGame = function(){
     timerFunc();
     monsterSpawn();
@@ -42,11 +40,15 @@
     }
     else if (startTimer === 20){
       clearInterval(spawnInterval2)
-      spawnInterval3 = setInterval(monsterSpawn, 1000)
+      spawnInterval3 = setInterval(monsterSpawn, 1200)
     }
     else if (startTimer === 35){
       clearInterval(spawnInterval3)
-      spawnInterval4 = setInterval(monsterSpawn, 800)
+      spawnInterval4 = setInterval(monsterSpawn, 1000)
+    }
+    else if (startTimer === 45){
+      clearInterval(spawnInterval4)
+      spawnInterval5 = setInterval(monsterSpawn, 850)
     }
 
 
@@ -83,6 +85,14 @@
 
 
   var endGame = function(){
+    //Uses the div that wraps the whole page to hide all elements and
+    //create a new background
+    $('#hide').hide();
+
+    //pause sound loop
+    document.querySelector('#ambience').pause();
+
+    document.querySelector('#jumpScare').play();
 
     counter = 0;
 
@@ -100,6 +110,11 @@
       $('#img' + i).removeClass('openDoor2s');
     }
 
+    $('body').css('background-image', 'url(images/scaryPopUp.jpg)');
+
+    setTimeout(function(){
+      document.location.reload(true);
+    }, 2000)
 }
 
 
@@ -124,6 +139,7 @@
   }
 
   $('#start-button').click(function(){
+    document.querySelector('#ambience').play();
     startGame();
 
     $('#start-button').text('Good Luck').css({
