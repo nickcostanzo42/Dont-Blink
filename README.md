@@ -23,3 +23,16 @@ User Stories:
 When the user clicks play, the doors will start opening at different intervals. 
 The user has to click the image of the door so that it closes.  If the door opening
 animation ends, then the game will end.  
+
+Pseudocode:
+1.  Will create a game board with images that reveal themselves at different intervals,
+and grow faster as the game goes on.
+--
+1. Create gameboard and website in HTML and CSS
+2. Use jQuery to target doors and open them.  Open them by appending classes.
+    -have the classes generated with Math.Random() function so that they open 
+    at different intervals.
+3. In order to have the game go faster, have it call the door opening function
+at different intervals as the game goes on longer.  25s interval of 1500, 35s, interval
+of 1000, etc..
+
