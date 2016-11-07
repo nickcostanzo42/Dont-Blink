@@ -17,7 +17,7 @@
 
   var startGame = function(){
     timerFunc();
-    doorInterval();
+    monsterSpawn();
   };
 
 //Seperate timer functions for different parts of the game
@@ -29,8 +29,10 @@
 }
 
 
-  var doorInterval = function(){
-        if (startTimer === 0){
+
+  var monsterSpawn = function(){
+//Makes it the doors open faster as the function goes on.
+    if (startTimer === 0){
       spawnInterval = setInterval(monsterSpawn, 1700)
     }
     if (startTimer === 10){
@@ -43,35 +45,12 @@
     }
     else if (startTimer === 35){
       clearInterval(spawnInterval3)
-      spawnInterval4 = setInterval(monsterSpawn, 800)
+      spawnInterval4 = setInterval(monsterSpawn, 850)
     }
      else if (startTimer === 50){
       clearInterval(spawnInterval4)
       spawnInterval5 = setInterval(monsterSpawn, 500)
     }
-  }
-
-  var monsterSpawn = function(){
-//Makes it the doors open faster as the function goes on.
-    // if (startTimer === 0){
-    //   spawnInterval = setInterval(monsterSpawn, 1700)
-    // }
-    // if (startTimer === 10){
-    //   clearInterval(spawnInterval);
-    //   spawnInterval2 = setInterval(monsterSpawn, 1500);
-    // }
-    // else if (startTimer === 20){
-    //   clearInterval(spawnInterval2)
-    //   spawnInterval3 = setInterval(monsterSpawn, 1000)
-    // }
-    // else if (startTimer === 35){
-    //   clearInterval(spawnInterval3)
-    //   spawnInterval4 = setInterval(monsterSpawn, 800)
-    // }
-    //  else if (startTimer === 50){
-    //   clearInterval(spawnInterval4)
-    //   spawnInterval5 = setInterval(monsterSpawn, 500)
-    // }
 
 
 
