@@ -152,6 +152,9 @@
     $('#start-button').fadeOut(1500, function(){
         //do nothing
     })
+    $('#instructions').fadeOut(1500, function(){
+      //do nothing
+    })
   })
 }
 
