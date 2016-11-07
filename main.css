@@ -33,6 +33,9 @@ body {
   right: 2%;
   font-size: 40px;
   text-align: center;
+  /* Start http://www.cursors-4u.com */
+  cursor: url(http://cur.cursors-4u.net/holidays/hol-4/hol335.cur), progress !important;
+  /* End http://www.cursors-4u.com */
 }
 
 #start > p {
