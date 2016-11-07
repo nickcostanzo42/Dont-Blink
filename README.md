@@ -8,7 +8,9 @@ The game's idea is based of the popular steam game 'Five Nights at Freddie's.' I
 
 The different images will be tied to objects that reveal themselves faster. As the user stays in the game longer, the shorter interval images will spawn more frequently.
 
-There is no way to 'win' the game, but there will be a high-score table that's based off of the time spent in the game.
+There is no way to 'win' the game, only to stay in as long as you can.
+
+I'd like to get a scoreboard in eventually.
 
 
 Approach:
@@ -18,4 +20,6 @@ and jQuery to open the doors randomly and allow the user to close them as well. 
 
 User Stories:
 
-The user should be clickingxs
+When the user clicks play, the doors will start opening at different intervals. 
+The user has to click the image of the door so that it closes.  If the door opening
+animation ends, then the game will end.  
