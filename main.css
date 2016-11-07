@@ -3,6 +3,12 @@ body {
   background-size: cover;
 }
 
+#instructions {
+  color: white;
+  font-size: 16px;
+  font-family: Butcherman;
+}
+
 #title{
   position: absolute;
   top: 2%;
