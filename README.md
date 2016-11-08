@@ -18,6 +18,8 @@ Approach:
 The game uses HTML and CSS to create and edit all of the elements on the page.  It then uses JS
 and jQuery to open the doors randomly and allow the user to close them as well.  There will be 3 (TBD) speeds that doors open at, they will start opening faster as the game progresses.  
 
+Credit to: Google fonts and www.cursors-4-u.com
+
 User Stories:
 
 When the user clicks play, the doors will start opening at different intervals. 
