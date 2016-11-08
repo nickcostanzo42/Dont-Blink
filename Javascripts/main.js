@@ -28,8 +28,6 @@
   }, 1000);
 }
 
-
-
   var monsterSpawn = function(){
 //Makes it the doors open faster as the function goes on.
     if (startTimer === 0){
@@ -118,8 +116,6 @@
       document.location.reload(true);
     }, 2000)
 }
-
-
 
 //Make each jQuery object a seperate class
   var addEventListeners = function(){

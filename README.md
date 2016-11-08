@@ -36,3 +36,7 @@ and grow faster as the game goes on.
 at different intervals as the game goes on longer.  25s interval of 1500, 35s, interval
 of 1000, etc..
 
+Challenge/Difficulties
+1.  Incorporating a leaderboard using local storage.
+2.  Getting the intervals to reset properly when the game resets.  
+
