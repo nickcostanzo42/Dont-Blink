@@ -148,15 +148,15 @@ body {
 }
 
 .openDoor4s {
-  animation: openDoor 4s;
+  animation: openDoor 5s;
 }
 
 .openDoor3s {
-  animation: openDoor 3s;
+  animation: openDoor 4s;
 }
 
 .openDoor2s {
-  animation: openDoor 2s;
+  animation: openDoor 3s;
 }
 
 .monster4s {
